@@ -24,10 +24,16 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* Make the page stack sections vertically and allow them to fill viewport height.
+     Previously `display:flex` + `place-items:center` caused unexpected centering/overflow
+     when multiple <section> elements are present. Use a column flex layout so sections
+     stack top-to-bottom and can use `min-h-screen` correctly. */
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 
 h1 {
