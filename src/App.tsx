@@ -4,7 +4,7 @@ import Services from "./components/services"
 import Testimonials from "./components/testimonials"
 import CTA from "./components/cta"
 import Footer from "./components/footer"
-import "./app.css"
+import "./App.css"
 
 export const metadata = {
   title: "AmbiSmart - From Ambis to Smart!",
