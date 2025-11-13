@@ -1,6 +1,8 @@
 "use client"
+// import useDocumentTitle from "../hooks/useDocumentTitle";
 
 export default function Hero() {
+  // useDocumentTitle("Home — AmbiSmart"); //Contoh Penggunaan
   return (
     <section className="min-h-screen bg-gradient-to-br from-primary via-primary to-primary-dark flex items-center justify-center px-4 relative overflow-hidden">
       {/* Background decoration */}
@@ -19,12 +21,12 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex gap-4">
-            <button className="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-transform hover:scale-105 shadow-lg">
+            <button className="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-lg">
               Mulai Belajar Sekarang
             </button>
-            <button className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition-all">
+            <a href="#services" className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-white transition-all">
               Lihat Paket Kami
-            </button>
+            </a>
           </div>
         </div>
 

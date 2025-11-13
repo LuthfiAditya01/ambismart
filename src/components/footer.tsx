@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h4 className="text-lg font-bold mb-4">AmbiSmart</h4>
-            <p className="text-gray-300 text-sm">Membimbing mahasiswa menuju kesuksesan akademik sejati.</p>
+            <p className="text-gray-300 text-sm">From Ambis to Smart!</p>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-4">Program</h4>
@@ -49,8 +49,8 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-bold mb-4">Hubungi Kami</h4>
-            <p className="text-sm text-gray-300 mb-2">📧 info@ambismart.id</p>
-            <p className="text-sm text-gray-300">📱 +62 XXX-XXXX-XXXX</p>
+            {/* <p className="text-sm text-gray-300 mb-2">📧 info@ambismart.id</p> */}
+            <p className="text-sm text-gray-300">📱 0852-8038-9330</p>
           </div>
         </div>
 
@@ -58,14 +58,11 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">© 2025 AmbiSmart. Semua hak dilindungi.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-300 hover:text-accent transition">
+              <a href="www.instagram.com/ambismart_" className="text-gray-300 hover:text-accent transition">
                 Instagram
               </a>
-              <a href="#" className="text-gray-300 hover:text-accent transition">
+              <a href="https://wa.me/6285280389330" className="text-gray-300 hover:text-accent transition">
                 WhatsApp
-              </a>
-              <a href="#" className="text-gray-300 hover:text-accent transition">
-                Tiktok
               </a>
             </div>
           </div>

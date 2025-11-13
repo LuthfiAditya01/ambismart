@@ -1,4 +1,7 @@
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+
 export default function About() {
+  // useDocumentTitle("Tentang — AmbiSmart"); //Contoh Penggunaan
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -17,7 +20,7 @@ export default function About() {
           </div>
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-accent hover:shadow-xl transition-shadow">
-              <h3 className="text-4xl font-bold text-accent mb-2">1000+</h3>
+              <h3 className="text-4xl font-bold text-green-400 mb-2">100+</h3>
               <p className="text-gray-600 font-semibold">Siswa Berhasil</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-accent-red hover:shadow-xl transition-shadow">
@@ -25,11 +28,11 @@ export default function About() {
               <p className="text-gray-600 font-semibold">Tingkat Kepuasan</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary hover:shadow-xl transition-shadow">
-              <h3 className="text-4xl font-bold text-primary mb-2">50+</h3>
-              <p className="text-gray-600 font-semibold">Mentor Berpengalaman</p>
+              <p className="text-gray-600 font-semibold">Dipandu Oleh</p>
+              <h3 className="text-2xl font-bold text-primary mb-2">Mentor Berpengalaman</h3>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-accent hover:shadow-xl transition-shadow">
-              <h3 className="text-4xl font-bold text-accent mb-2">24/7</h3>
+              <h3 className="text-4xl font-bold text-accent-dark mb-2">24/7</h3>
               <p className="text-gray-600 font-semibold">Support Tersedia</p>
             </div>
           </div>

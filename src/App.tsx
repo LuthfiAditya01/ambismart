@@ -1,10 +1,8 @@
-import Hero from "./components/hero"
-import About from "./components/about"
-import Services from "./components/services"
-import Testimonials from "./components/testimonials"
-import CTA from "./components/cta"
+
 import Footer from "./components/footer"
 import "./App.css"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Dashboard from "./pages/dashboard"
 
 export const metadata = {
   title: "AmbiSmart - From Ambis to Smart!",
@@ -15,11 +13,11 @@ export const metadata = {
 export default function App() {
   return (
     <>
-      <Hero />
-      <About />
-      <Services />
-      <Testimonials />
-      <CTA />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </>
   )
