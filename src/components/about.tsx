@@ -9,7 +9,7 @@ export default function About() {
           <div className="text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 md:mb-6">Tentang AmbiSmart</h2>
             <p className="text-base sm:text-lg text-gray-700 mb-4 md:mb-6 leading-relaxed">
-              AmbiSmart adalah platform bimbingan akademik terpercaya yang telah membantu lebih dari 1000+ mahasiswa
+              AmbiSmart adalah platform bimbingan akademik terpercaya yang telah membantu lebih dari 100+ mahasiswa
               mencapai kesuksesan mereka. Dengan tim mentor berpengalaman dan metodologi pembelajaran yang terbukti
               efektif, kami siap membimbing Anda menuju prestasi gemilang.
             </p>

@@ -18,7 +18,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/2nd" element={<SecondAnniversary />} />
+          <Route path="/2ndambismart" element={<SecondAnniversary />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
