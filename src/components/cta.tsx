@@ -8,11 +8,11 @@ export default function CTA() {
           akademik bersama AmbiSmart.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all hover:scale-105 shadow-lg text-lg">
+          {/* <button className="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all hover:scale-105 shadow-lg text-lg">
             Daftar Sekarang
-          </button>
-          <button className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition-all text-lg">
-            Hubungi Kami
+          </button> */}
+          <button className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition-all text-lg" onClick={() => (window.location.href = "https://wa.me/6285280389330")}>
+            Daftar dan Hubungi Kami! 
           </button>
         </div>
       </div>
