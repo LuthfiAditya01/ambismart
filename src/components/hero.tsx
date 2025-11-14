@@ -4,7 +4,7 @@
 export default function Hero() {
   // useDocumentTitle("Home — AmbiSmart"); //Contoh Penggunaan
   return (
-    <section className="min-h-screen bg-gradient-to-br from-primary via-primary to-primary-dark flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-primary via-accent-primary to-white flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-accent opacity-10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-accent-red opacity-10 rounded-full blur-3xl"></div>
