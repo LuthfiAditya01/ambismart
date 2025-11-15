@@ -26,11 +26,11 @@ export default function Hero() {
               onClick={() => (window.location.href = "#about")}>
               Apa itu AmbiSmart?
             </button>
-            <button
+            {/* <button
               className="px-6 sm:px-8 py-3 sm:py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-lg text-sm sm:text-base"
               onClick={() => (window.location.href = "/2ndambismart")}>
               Test ke halaman 2nd anniv
-            </button>
+            </button> */}
           </div>
         </div>
 
