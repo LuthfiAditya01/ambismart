@@ -6,12 +6,6 @@ import Dashboard from "./pages/dashboard"
 import NotFound from "./pages/404"
 import SecondAnniversary from "./pages/2ndyear"
 
-export const metadata = {
-  title: "AmbiSmart - From Ambis to Smart!",
-  description:
-    "Kami membantu siswa mencapai kesuksesan akademik melalui bimbingan intensif dan program paket pembelajaran yang disesuaikan dengan kebutuhan Anda.",
-}
-
 export default function App() {
   return (
     <>
