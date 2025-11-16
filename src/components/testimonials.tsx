@@ -9,20 +9,44 @@ export default function Testimonials() {
         "Sangat membantu saat saya buntu dengan pembahasan. Simulasi semhas yang kami lakukan sangat bermanfaat dan alhamdulillah semhas saya lancar. Terima kasih atas kesabaran dan dukungan kalian!",
     },
     {
-      name: "Riska Nurma",
-      major: "Sistem Informasi, Universitas Negeri",
-      package: "Paket SMART Lv.3",
-      achievement: "🏆 LOLOS BEASISWA",
+      name: "Putri Ayu Lestari",
+      major: "Peserta Duta Bahasa Indonesia Provinsi Lampung Tahun 2025",
+      // package: "Paket SMART Lv.3",
+      achievement: "🏆 Juara 1 Putri Duta Bahasa Provinsi Lampung",
       quote:
-        "Berkat bimbingan AmbiSmart selama 7 sesi, saya berhasil lolos seleksi seminar Young Project 2.0 nasional. Ilmu yang diberikan sangat aplikatif dan mentor-nya sangat supportif.",
+        "Kamu pernah ngerasain ga, belajar tapi gak sadar? Kurang lebih perasaan itu yang aku rasakan waktu belajar di AmbiSmart. Dengan ngobrol santai, berbagi cerita dan keresahan, dan ketawa bareng, ternyata itulah bagian belajarnya. Hasilnya juga diluar dugaanku, aku jadi merasa lebih siap dan mengenal diriku. Dari AmbiSmart juga, aku menyadari bahwa segala tujuan bisa kita capai dengan langkah awal mengenali diri dengan sebaik mungkin. Maka, untuk kamu ayo coba juga untuk belajar disini! Rasakan suasana menyenangkan, tanpa pusing dan drama belajar kaku, tapi hasilnya nomor satu!",
     },
     {
-      name: "Ahmad Wijaya",
-      major: "Teknik Mesin, ITB",
-      package: "Paket SMART Lv.2",
-      achievement: "🥇 JUARA LOMBA",
+      name: "Arif Nurul Al Aziz",
+      major: "Peserta Duta Bahasa Indonesia Provinsi Lampung Tahun 2025",
+      // package: "Paket SMART Lv.3",
+      achievement: "🏆 Juara 2 Putra Duta Bahasa Provinsi Lampung",
       quote:
-        "Program ini tidak hanya membantu mengerjakan skripsi, tapi juga memberikan skills yang berguna untuk kompetisi. Alhamdulillah juara kompetisi tingkat nasional!",
+        "AmbiSmart bener-bener membantu saya untuk mempersiapkan penilaian dalam pemilihan Duta Bahasa Provinsi Lampung 2025. Terutama pada wawancara akhir, bersama AmbiSmart saya diberikan ruang diskusi, membedah total persiapan dan krida, serta mematangkan kesiapan dalam menjawab berbagai jenis pertanyaan terkait. Saya sangat merekomendasikan AmbiSmart untuk mempersiapkan diri dalam menempuh segala jenis prestasi.",
+    },
+    {
+      name: "Salsabilla Najwa Az-Zahra",
+      major: "Peserta Duta Bahasa Indonesia Provinsi Lampung Tahun 2025",
+      // package: "Paket SMART Lv.3",
+      achievement: "🏆 Juara 2 Putri Duta Bahasa Provinsi Lampung",
+      quote:
+        "Apapun kegiatannya, AmbiSmart jawabannya. Berbagi cerita juga keresahan, diterima baik di sini. Rasanya seperti memiliki kakak kandung namun tak sedarah. AmbiSmart juga menjadi salah satu tempat belajar terbaik untuk mengejar segala impian kalian. Jadi, mari bersinar bersama AmbiSmart!",
+    },
+    {
+      name: "Nur Intan Permatasari Gumay",
+      major: "Kedokteran - Universitas Ciputra",
+      package: "Paket SMART Lv.2",
+      // achievement: "🥇 JUARA LOMBA",
+      quote:
+        "Makasih banyak buat tutor2 di ambissmart atas sharing ilmunya tentang tata cara presentasi sidang dan gambaran menulis penelitian, Alhamdulillah semproku dah selesai bismillah revisi dan bab 5 dan 6 lancar thankyouu kakkele",
+    },
+    {
+      name: "Dea Ayu Ardelia",
+      major: "Agribisnis - Universitas Sultan Ageng Tirtayasa",
+      // package: "Paket SMART Lv.2",
+      achievement: "🥇 Lulusan Terbaik",
+      quote:
+        "Makasih banyak buat tutor2 di ambissmart atas sharing ilmunya tentang tata cara presentasi sidang dan gambaran menulis penelitian, Alhamdulillah semproku dah selesai bismillah revisi dan bab 5 dan 6 lancar thankyouu kakkele",
     },
   ]
 
@@ -49,8 +73,10 @@ export default function Testimonials() {
 
               <div className="border-t pt-4 mt-6">
                 <p className="font-bold text-primary">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.major}</p>
-                <p className="text-xs text-accent text-black font-semibold mt-1">{testimonial.package}</p>
+                {testimonial.major ? <>
+                <p className="text-sm text-gray-600">{testimonial.major}</p></> : null}
+                {testimonial.package ? <>
+                <p className="text-xs text-accent text-black font-semibold mt-1">{testimonial.package}</p></> : null}
               </div>
             </div>
           ))}

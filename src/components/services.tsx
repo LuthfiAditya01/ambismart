@@ -43,7 +43,7 @@ export default function Services() {
         "GRATIS Konsultasi Revisi Dosen",
         "5 hari - 1 bulan chat intensif",
       ],
-      color: "accent",
+      color: "black",
     },
     {
       name: "PAKET SMART",
@@ -128,7 +128,7 @@ export default function Services() {
         "Mentor adalah AWARDEE yang berpengalaman langsung",
         "3 hari - 2 minggu intensif chat",
       ],
-      color: "accent",
+      color: "black",
     },
     {
       name: "PAKET LOMBA",

@@ -8,7 +8,7 @@ export default function CTA() {
           akademik bersama AmbiSmart.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all hover:scale-105 shadow-lg text-lg">
+          <button className="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all hover:scale-105 shadow-lg text-lg" onClick={() => (window.location.href = "https://bit.ly/PendaftaranAmbiSmart")}>
             Daftar Sekarang
           </button>
           <span className="text-white font-bold text-lg">Atau</span>

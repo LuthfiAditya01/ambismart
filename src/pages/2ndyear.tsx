@@ -3,7 +3,24 @@ import useDocumentTitle from "../hooks/useDocumentTitle"
 
 export default function SecondAnniversary() {
   useDocumentTitle("Ambismart 2nd Anniversary — Ambismart In The Park")
-  const [isEnglish, setIsEnglish] = useState(false);
+  const [isEnglish, setIsEnglish] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
+  const [redirectUrl, setRedirectUrl] = useState("");
+
+  const handleExternalLink = (url: string) => {
+    setRedirectUrl(url);
+    setShowPopup(true);
+  };
+
+  const confirmRedirect = () => {
+    window.location.href = redirectUrl;
+    setShowPopup(false);
+  };
+
+  const cancelRedirect = () => {
+    setShowPopup(false);
+    setRedirectUrl("");
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
@@ -70,7 +87,7 @@ export default function SecondAnniversary() {
             </div>
           </div>
 
-          <button className="px-8 sm:px-10 py-4 sm:py-5 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-2xl text-base sm:text-lg transform hover:scale-105">
+          <button className="px-8 sm:px-10 py-4 sm:py-5 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-2xl text-base sm:text-lg transform hover:scale-105" onClick={() => handleExternalLink("https://forms.gle/YeEfTkXwQTE4yvBN6")}>
             {isEnglish ? "Register Now - FREE!" : "Daftar Sekarang - GRATIS!"}
           </button>
         </div>
@@ -208,10 +225,10 @@ export default function SecondAnniversary() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <button className="px-8 sm:px-10 py-4 sm:py-5 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-2xl text-base sm:text-lg transform hover:scale-105 w-full sm:w-auto" onClick={() => window.location.href = "https://wa.me/6285280389330?text=Halo%20kak!%20saya%20mau%20tanya%20tentang%20Ambismart%20In%20The%20Park%20Dong"}>
+            <button className="px-8 sm:px-10 py-4 sm:py-5 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-2xl text-base sm:text-lg transform hover:scale-105 w-full sm:w-auto" onClick={() => handleExternalLink("https://forms.gle/YeEfTkXwQTE4yvBN6")}>
               {isEnglish ? "Register Now" : "Daftar Sekarang"}
             </button>
-            <button className="px-8 sm:px-10 py-4 sm:py-5 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-2xl text-base sm:text-lg transform hover:scale-105 w-full sm:w-auto" onClick={() => window.location.href = "https://wa.me/6285280389330?text=Halo%20kak!%20saya%20mau%20tanya%20tentang%20Ambismart%20In%20The%20Park%20Dong"}>
+            <button className="px-8 sm:px-10 py-4 sm:py-5 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-2xl text-base sm:text-lg transform hover:scale-105 w-full sm:w-auto" onClick={() => handleExternalLink("https://wa.me/6285280389330?text=Halo%20kak!%20saya%20mau%20tanya%20tentang%20Ambismart%20In%20The%20Park%20Dong")}>
               {isEnglish ? "More Info" : "Info Lebih Lanjut"}
             </button>
           </div>
@@ -221,7 +238,7 @@ export default function SecondAnniversary() {
               <span>📧</span>
               <span>info@ambismart.id</span>
             </div> */}
-            <div className="flex items-center justify-center gap-2 cursor-pointer" onClick={() => window.location.href = "https://wa.me/6285280389330"}>
+            <div className="flex items-center justify-center gap-2 cursor-pointer" onClick={() => handleExternalLink("https://wa.me/6285280389330")}>
               <span>📱</span>
               <span>WhatsApp: +62 852-8038-9330</span>
             </div>
@@ -240,6 +257,44 @@ export default function SecondAnniversary() {
           </p>
         </div>
       </section>
+
+      {/* Popup Confirmation */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 px-4">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl transform transition-all animate-in">
+            <div className="text-center mb-6">
+              <div className="text-5xl mb-4">🔗</div>
+              <h3 className="text-2xl font-bold text-primary mb-2">
+                {isEnglish ? "You're being redirected" : "Anda akan diarahkan"}
+              </h3>
+              <p className="text-gray-600 text-sm">
+                {isEnglish 
+                  ? "You will be redirected to an external page. Continue?" 
+                  : "Anda akan diarahkan ke halaman eksternal. Lanjutkan?"}
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-lg p-3 mb-6">
+              <p className="text-xs text-gray-500 break-all">{redirectUrl}</p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button 
+                onClick={confirmRedirect}
+                className="flex-1 px-6 py-3 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-all shadow-lg"
+              >
+                {isEnglish ? "Continue" : "Lanjutkan"}
+              </button>
+              <button 
+                onClick={cancelRedirect}
+                className="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 font-bold rounded-lg hover:bg-gray-50 transition-all"
+              >
+                {isEnglish ? "Cancel" : "Batal"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
