@@ -6,8 +6,23 @@ export default function SecondAnniversary() {
   const [isEnglish, setIsEnglish] = useState(true);
   const [showPopup, setShowPopup] = useState(false);
   const [redirectUrl, setRedirectUrl] = useState("");
+  const [nameUrl, setNameUrl] = useState("");
+  const urlName = (url : string) => {
+    if (url === "https://forms.gle/YeEfTkXwQTE4yvBN6") {
+      console.log("Daftar Ambismart");
+      return "Pendaftaran AmbiSmart";
+    } else if (url === "https://wa.me/6285280389330?text=Halo%20kak!%20saya%20mau%20tanya%20tentang%20Ambismart%20In%20The%20Park%20Dong") {
+      console.log("CP Ambismart in the park");
+      return "Contact Person Ambismart in The Park";
+    } else {
+      console.log(url);
+      return url;
+    }
+  }
 
   const handleExternalLink = (url: string) => {
+    console.log(url);
+    setNameUrl(urlName(url));
     setRedirectUrl(url);
     setShowPopup(true);
   };
@@ -275,7 +290,7 @@ export default function SecondAnniversary() {
             </div>
             
             <div className="bg-gray-50 rounded-lg p-3 mb-6">
-              <p className="text-xs text-gray-500 break-all">{redirectUrl}</p>
+              <p className="text-xs text-gray-500 break-all">{nameUrl}</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
