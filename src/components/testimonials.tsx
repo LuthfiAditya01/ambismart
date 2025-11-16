@@ -35,7 +35,7 @@ export default function Testimonials() {
     {
       name: "Nur Intan Permatasari Gumay",
       major: "Kedokteran - Universitas Ciputra",
-      package: "Paket SMART Lv.2",
+      package: "Paket AMBIS Lv.2",
       achievement: "✨ LANCAR SEMPRO",
       quote:
         "Makasih banyak buat tutor2 di ambissmart atas sharing ilmunya tentang tata cara presentasi sidang dan gambaran menulis penelitian, Alhamdulillah semproku dah selesai bismillah revisi dan bab 5 dan 6 lancar thankyouu kakkele",
@@ -46,7 +46,22 @@ export default function Testimonials() {
       // package: "Paket SMART Lv.2",
       achievement: "🥇 Lulusan Terbaik",
       quote:
-        "Makasih banyak buat tutor2 di ambissmart atas sharing ilmunya tentang tata cara presentasi sidang dan gambaran menulis penelitian, Alhamdulillah semproku dah selesai bismillah revisi dan bab 5 dan 6 lancar thankyouu kakkele",
+        "Makasih banyak buat tutor2 di ambissmart atas sharing ilmunya tentang tata cara presentasi sidang dan gambaran menulis penelitian, Alhamdulillah semproku dah selesai bismillah revisi dan bab 5 dan 6 lancar thankyouu kakk🥰🥰",
+    },
+    {
+      name: "Fatimah Azzahra Putri Bachtiar",
+      major: "Psikologi dan Kesehatan - UIN Walisongo Semarang",
+      // package: "Paket SMART Lv.2",
+      achievement: "🥇 Lolos Beasiswa GEN BI",
+      quote: "Disini bener-bener di bimbing di arahkan, yang awalnya aku banyak gagalnya dalam mendaftar beasiswa Alhamdulillah dalam beasiswa ini langsung lolos yha terbilang udh di tahap akhir wawancara 4 beasiswa tapi gagal semua dan awalnya BANK INDONESIA BANK SENTRAL REPUBLIK INDONESIA GenBl Generasi Baru Indonesia aku berharap bisa keterima di beasiswaaa Djarum yha kak, karena itu impianku dari awal Maba, tapi blm rejeki aku buat mendapatkannya, hampir nyerah karena udh ketolak beasiswa 6 atau 7 kali karena saking banyaknya ortu sempet buat bilang engga usah daftar lagi takut nanti aku sedih karena gagal, dan dengan tekat aku, akhirnya aku coba ikut daftar dan cari-cari bimbingan dari lg dari testimoninya juga ternyata sebagus itu akhirnya aku coba-coba ikut dan bener-bener di bimbing di arahkan untuk saat wawancara gini-gini, dil. Mungkin dulu kesalahan aku saat wawancara masih ada kata eeee, emmm, dan kaya masih mikirnya lama bgt, dan disini bener-bener di ajarin wawancara nya dengan baik. Makasih.",
+    },
+    {
+      name: "Nayra Umaiza",
+      major: "SMAN 8 Jakarta",
+      package: "Paket Lomba Lv. 4",
+      // achievement: "🥇 Lulusan Terbaik",
+      quote:
+        "Gabung di AmbiSmart bener-bener keputusan terbaik! Kakaknya nggak cuma jelas dalam ngejelasin, tapi juga selalu sigap ngingetin deadline, jadi semuanya bisa tersusun rapi dan terencana. Yang paling aku suka, penyusunan struktur essay jadi jauh lebih terarah dan sistematis, nggak bingung mulai dari mana atau apa yang harus diperbaiki. Selain itu, bimbingannya juga bikin aku lebih paham cara nulis dengan argumen yang kuat dan runtut. Rasanya kayak punya mentor pribadi yang nggak cuma bantu teknis, tapi juga nge-boost kepercayaan diri buat nulis lebih baik. Highly recommended!",
     },
   ]
 
@@ -67,7 +82,7 @@ export default function Testimonials() {
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-t-4 border-accent"
             >
               <div className="mb-4">
-                <p className="text-sm text-accent-red font-bold">{testimonial.achievement.toUpperCase()}</p>
+                {testimonial.achievement ? <p className="text-sm text-accent-red font-bold">{testimonial.achievement.toUpperCase()}</p> : null}
                 <p className="text-gray-600 text-sm mt-2">{testimonial.quote}</p>
               </div>
 
