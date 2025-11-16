@@ -67,7 +67,7 @@ export default function Testimonials() {
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-t-4 border-accent"
             >
               <div className="mb-4">
-                <p className="text-sm text-accent-red font-bold">{testimonial.achievement}</p>
+                <p className="text-sm text-accent-red font-bold">{testimonial.achievement.toUpperCase()}</p>
                 <p className="text-gray-600 text-sm mt-2">{testimonial.quote}</p>
               </div>
 
