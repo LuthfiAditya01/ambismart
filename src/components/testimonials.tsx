@@ -6,7 +6,7 @@ export default function Testimonials() {
       package: "Paket SMART Lv.4",
       achievement: "✨ LANCAR SEMHAS",
       quote:
-        "Sangat membantu saat saya buntu dengan pembahasan. Simulasi semhas yang kami lakukan sangat bermanfaat dan alhamdulillah semhas saya lancar. Terima kasih atas kesabaran dan dukungan kalian!",
+        "ga nyesel ikutan ambismart soalnya ngebantu bangett waktu pas lagi buntu buntunya ngerjain bagian pembahasan, terus seru jugaa kita nyobain simulasi buat semhas dan alhamdulillah lancar semhasnya berkat udah belajar h-2 semhas bareng teteh teteh yang baikk baik inii, sama makasih ya tehh udah mau nungguin aku yang sangat amat ngarett diwaktuu, yang seharusnya selesainya mungkin udah dari lama tapi baru selesai karna ada beberapa hal. pokonyaa terbaik dehhh, makasih banyak ya teteh teteh🌻🌻",
     },
     {
       name: "Putri Ayu Lestari",
@@ -36,7 +36,7 @@ export default function Testimonials() {
       name: "Nur Intan Permatasari Gumay",
       major: "Kedokteran - Universitas Ciputra",
       package: "Paket SMART Lv.2",
-      // achievement: "🥇 JUARA LOMBA",
+      achievement: "✨ LANCAR SEMPRO",
       quote:
         "Makasih banyak buat tutor2 di ambissmart atas sharing ilmunya tentang tata cara presentasi sidang dan gambaran menulis penelitian, Alhamdulillah semproku dah selesai bismillah revisi dan bab 5 dan 6 lancar thankyouu kakkele",
     },
