@@ -3,7 +3,7 @@ export default function Services() {
     {
       name: "PAKET NEWBIE",
       link: "PAKET%20NEWBIE",
-      price: "85k - 120k",
+      price: "100k - 200k",
       subtitle: "✨ GARANSI JUDUL DI ACC! ✨",
       description: "Bimbingan intensif untuk penulisan judul penelitian",
       features: [
@@ -23,7 +23,7 @@ export default function Services() {
     {
       name: "PAKET AMBIS",
       link: "PAKET%20AMBIS",
-      price: "100k - 450k",
+      price: "150k - 500k",
       subtitle: "✨ BIMBINGAN BAB 1-3 ✨",
       description: "Cocok untuk yang mau SEMPRO",
       features: [
@@ -48,7 +48,7 @@ export default function Services() {
     {
       name: "PAKET SMART",
       link: "PAKET%20SMART",
-      price: "150k - 500k",
+      price: "200k - 600k",
       subtitle: "✨ LULUS LEBIH CEPAT ✨",
       description: "Cocok untuk yang mau SEMHAS atau SIDANG",
       features: [
